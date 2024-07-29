@@ -122,7 +122,7 @@ class Quadcopter:
 
         # Draw quadcopter body with thicker lines
         glColor3f(191/255, 64/255, 191/255)  # Set quadcopter color
-        glLineWidth(3)  # Set line width
+        glLineWidth(5)  # Set line width
         glBegin(GL_LINES)
         glVertex3f(-2, 0, -2)
         glVertex3f(2, 0, 2)
@@ -136,7 +136,7 @@ class Quadcopter:
             glPushMatrix()
             glTranslatef(pos[0], pos[1], pos[2])
             glColor3f(active_l[i], 0, 0)
-            gluSphere(gluNewQuadric(), 0.1, 10, 10)
+            gluSphere(gluNewQuadric(), 0.3, 20, 20)
             glPopMatrix()
 
         glPopMatrix()
