@@ -150,7 +150,7 @@ for i in range(num_agents):
     all_agents.append(quadcopter)
 
 # Load and set up the ground texture
-ground_texture_id = load_texture("grid_text2.jpg")
+ground_texture_id = load_texture("DroneSim3d_for_RNN-main/grid_text2.jpg")
 
 def draw_checkp(size, position):
     glPushMatrix()
